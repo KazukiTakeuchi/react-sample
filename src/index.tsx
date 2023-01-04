@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Hello from './Hello';
 import Parent from './ContainerSample';
+import Page from './ContextSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Hello />
-    <Parent></Parent>
+    <Parent />
+    <Page />
   </React.StrictMode>
 );
 
