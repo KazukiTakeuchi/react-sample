@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
-import { css, ClassNames } from '@emotion/react';
+import { css, SerializedStyles } from '@emotion/react';
 import './App.css';
 import { ChildArea } from './components/ChildArea';
-
+/** @jsxImportSource @emotion/react */
 function App() {
   const [text, setText] = useState('');
   const [open, setOpen] = useState(false);
@@ -19,7 +19,7 @@ function App() {
     setOpen(false);
   }, []);
 
-  const containerStyle = css`
+  const containerStyle: SerializedStyles = css`
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
@@ -27,9 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <ClassNames>
-        {({ css }) => <div className={css(containerStyle)}></div>}
-      </ClassNames>
+      <div css={containerStyle}></div>
       <input value={text} onChange={onChangeText} />
       <br />
       <button onClick={onClickOpen}>表示</button>
