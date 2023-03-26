@@ -11,7 +11,7 @@ export const PrimaryButton:FC<props> = (props) => {
 };
 
 const SButton = styled.button`
-  background-color: #40514e;
+  background-color: blue;
   color: #fff;
   padding: 6px 24px;
   border-radius: 9999px;
