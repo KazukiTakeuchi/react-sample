@@ -1,15 +1,16 @@
 import './App.css';
 import { BrowserRouter, Link } from 'react-router-dom';
 import { Router } from './router/router';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
 
 function App() {
   return (
     <BrowserRouter>
-        <div className="App">
-          <Link to="/">Home</Link>
-          <Link to="/page1">Page1</Link>
-          <Link to="/page2">Page2</Link>
-        </div>
+      <div className='App'>
+        <PrimaryButton>
+          test
+        </PrimaryButton>
+      </div>
       <Router />
     </BrowserRouter>
   );
