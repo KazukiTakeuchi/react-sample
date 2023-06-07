@@ -1,3 +1,11 @@
+# プロジェクト概要
+Reactの学習用として作成したレポジトリ
+以下の技術記事で作成したTodoリストのソースコードである
+- 【TypeScriptで学ぶReact入門】Atomic Design実践ガイド📙
+  - https://zenn.dev/kazu1/articles/c395f18633275c
+
+ReactとTypeScriptを用いてCRUD機能のあるTodoリストを作成している
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
