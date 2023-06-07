@@ -1,7 +1,7 @@
 import { TaskList } from "./components/organisms/TaskList";
 import { AppTemplate } from "./components/Templates/AppTemplate";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <AppTemplate>
